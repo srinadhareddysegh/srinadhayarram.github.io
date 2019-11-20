@@ -1,0 +1,14 @@
+{
+	"name": "AzureDataLakeStore1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://dl01adlsgen1.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "ca5bef1e-67ca-4957-94c4-c1028f9f69da",
+			"subscriptionId": "eca8047f-9083-4422-ad8f-f561477cbd60",
+			"resourceGroupName": "yarrams"
+		}
+	}
+}
