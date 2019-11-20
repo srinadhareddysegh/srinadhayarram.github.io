@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf02testallactivities"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://sa01gen2account.dfs.core.windows.net"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://dl01adlsgen1.azuredatalakestore.net/webhdfs/v1"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_tenant": {
+			"value": "ca5bef1e-67ca-4957-94c4-c1028f9f69da"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_subscriptionId": {
+			"value": "eca8047f-9083-4422-ad8f-f561477cbd60"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_resourceGroupName": {
+			"value": "yarrams"
+		},
+		"LS_KeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://kv01secret.vault.azure.net/"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/eca8047f-9083-4422-ad8f-f561477cbd60/resourceGroups/yarrams/providers/Microsoft.Storage/storageAccounts/testyarrams"
+		}
+	}
+}
