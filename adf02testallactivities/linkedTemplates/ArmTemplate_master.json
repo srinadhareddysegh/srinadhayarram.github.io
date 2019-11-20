@@ -31,7 +31,7 @@
 			"type": "string",
 			"defaultValue": "https://kv01secret.vault.azure.net/"
 		},
-		"trigger1_properties_typeProperties_scope": {
+		"trigger2_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/eca8047f-9083-4422-ad8f-f561477cbd60/resourceGroups/yarrams/providers/Microsoft.Storage/storageAccounts/testyarrams"
 		},
@@ -80,8 +80,8 @@
 					"LS_KeyVault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('LS_KeyVault_properties_typeProperties_baseUrl')]"
 					},
-					"trigger1_properties_typeProperties_scope": {
-						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
+					"trigger2_properties_typeProperties_scope": {
+						"value": "[parameters('trigger2_properties_typeProperties_scope')]"
 					}
 				}
 			},

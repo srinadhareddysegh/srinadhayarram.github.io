@@ -31,7 +31,7 @@
 			"type": "string",
 			"defaultValue": "https://kv01secret.vault.azure.net/"
 		},
-		"trigger1_properties_typeProperties_scope": {
+		"trigger2_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/eca8047f-9083-4422-ad8f-f561477cbd60/resourceGroups/yarrams/providers/Microsoft.Storage/storageAccounts/testyarrams"
 		}
@@ -183,7 +183,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"name": "[concat(parameters('factoryName'), '/trigger2')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -200,11 +200,12 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/test/blobs/",
+					"blobPathBeginsWith": "/test/blobs/success",
 					"ignoreEmptyBlobs": false,
-					"scope": "[parameters('trigger1_properties_typeProperties_scope')]",
+					"scope": "[parameters('trigger2_properties_typeProperties_scope')]",
 					"events": [
-						"Microsoft.Storage.BlobCreated"
+						"Microsoft.Storage.BlobCreated",
+						"Microsoft.Storage.BlobDeleted"
 					]
 				}
 			},

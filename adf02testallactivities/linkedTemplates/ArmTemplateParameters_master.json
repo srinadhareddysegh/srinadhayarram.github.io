@@ -23,7 +23,7 @@
 		"LS_KeyVault_properties_typeProperties_baseUrl": {
 			"value": "https://kv01secret.vault.azure.net/"
 		},
-		"trigger1_properties_typeProperties_scope": {
+		"trigger2_properties_typeProperties_scope": {
 			"value": "/subscriptions/eca8047f-9083-4422-ad8f-f561477cbd60/resourceGroups/yarrams/providers/Microsoft.Storage/storageAccounts/testyarrams"
 		},
 		"containerUri": {
